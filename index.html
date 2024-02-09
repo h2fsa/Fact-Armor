@@ -30,30 +30,30 @@
             <div
                 style="text-align: center;border: 1px solid #ababab;padding: 25px;margin-top: 25px;border-radius: 12px;min-width: 350px;background-color: #acd5f5;">
                 <h1>News verifier</h1>
-                <input type="text" placeholder="Enter url"
+                <input id="url-input" type="text" placeholder="Enter news url"
                     style="width: 300px;border-radius: 25px;padding: 10px;border: 1px solid #c8c1c1;"><br />
-                <button
+                <button onclick="handleClick()"
                     style="border-radius: 25px;padding: 10px 40px;margin-top: 10px;background-color: blue;color: #fff;border: 1px solid blue;">Verify</button>
 
             </div>
-            <div
-                style="text-align: center;border: 1px solid #ababab;padding: 25px;margin-top: 25px;border-radius: 12px;min-width: 350px;background-color: #acd5f5;">
+            <div id="matched"
+                style="display: none; text-align: center;border: 1px solid #ababab;padding: 25px;margin-top: 25px;border-radius: 12px;min-width: 350px;background-color: #acd5f5;">
                 <img src="verified.gif" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
                 <h2>Verified</h2>
-                <button
+                <button onclick="handleverifiedClick()"
                     style="border-radius: 25px;padding: 10px 40px;margin-top: 10px;background-color: blue;color: #fff;border: 1px solid blue;">Ok</button>
             </div>
-            <div
-                style="text-align: center;border: 1px solid #ababab;padding: 25px;margin-top: 25px;border-radius: 12px;min-width: 350px;background-color: #acd5f5;">
+            <div id="failedDiv"
+                style="display: none; text-align: center;border: 1px solid #ababab;padding: 25px;margin-top: 25px;border-radius: 12px;min-width: 350px;background-color: #acd5f5;">
                 <img src="wrong.gif" style="height: 50px;width: 50px;border-radius: 50%;" alt="">
                 <h2>Failed</h2>
                 <p>We didn't find any url</p>
-                <button
+                <button 
                     style="border-radius: 25px;padding: 10px 40px;margin-top: 10px;background-color: blue;color: #fff;border: 1px solid blue;">
                     <a style="color: #fff;text-decoration: none;" href="journlist.html">Contact journlist</a></button>
             </div>
         </div>
     </div>
 </body>
-
+<script src="js/news.js"></script>
 </html>
