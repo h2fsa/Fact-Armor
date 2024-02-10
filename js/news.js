@@ -65,3 +65,13 @@ async function handleClick() {
         alert("Please enter news url");
     }
 }
+function handlefeedbackclick(answer){
+let textarea = document.getElementsById("url-input")
+    if (answer=="yes"){
+    textarea.classList.add("show")
+    textarea.classList.remove("hide")
+}
+else{
+    textarea.classList.remove("show")
+}
+}

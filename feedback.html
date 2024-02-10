@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
+    <style>
+        body {
+            font-family: Verdana;
+            padding: 0;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #2e3cb6;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        input:focus {
+            outline: none;
+        }
+        .show {
+        display: block;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
 </head>
 <body>
+    <div style="display: flex;justify-content: center;margin-bottom: 25px;">
+        <div style="min-width: 350px;">
+    <div
+                style="text-align: center;border: 1px solid #ababab;padding: 25px;margin-top: 25px;border-radius: 12px;min-width: 350px;background-color: #acd5f5;">
+                <h1>Feedback</h1>
+                <h2>Are you satisfied?</h2>
+                
+                <button onclick="handlefeedbackclick('yes')"
+                    style="border-radius: 25px;padding: 10px 40px;margin-top: 10px;background-color: blue;color: #fff;border: 1px solid blue;">Yes</button>
+                <button onclick="handlefeedbackclick()"
+                    style="border-radius: 25px;padding: 10px 40px;margin-top: 10px;background-color: blue;color: #fff;border: 1px solid blue;">No</button>
+                    <br><br /><input id="url-input" type="text" placeholder="Please provide your feedback"
+                    style="width: 300px;border-radius: 25px;padding: 10px;border: 1px solid #c8c1c1;">
+
+            </div>
     
+    
+    </div>
+      </div>
+      
+
 </body>
+<script src="js/news.js"></script>
 </html>
